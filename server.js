@@ -3,6 +3,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const chatHandler = require('./api/chat');
+const leadHandler = require('./api/lead');
 
 const PORT = process.env.PORT || 3000;
 const MIME_TYPES = {
@@ -29,6 +30,24 @@ const server = http.createServer(async (req, res) => {
   }
 
   // API 라우트
+  if (req.url === '/api/lead' && req.method === 'POST') {
+    let body = '';
+    req.on('data', chunk => (body += chunk));
+    req.on('end', async () => {
+      try { req.body = JSON.parse(body); } catch { req.body = {}; }
+      const mockRes = {
+        statusCode: 200,
+        status(code) { this.statusCode = code; return this; },
+        json(data) {
+          res.writeHead(this.statusCode, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify(data));
+        },
+      };
+      await leadHandler(req, mockRes);
+    });
+    return;
+  }
+
   if (req.url === '/api/chat' && req.method === 'POST') {
     let body = '';
     req.on('data', chunk => (body += chunk));
