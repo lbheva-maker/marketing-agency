@@ -1,0 +1,190 @@
+/* Miricanvas Design System — Semantic tokens (light + dark) */
+/* Source: packages/design-system/tokens/transformed/{light,dark}.json */
+
+:root,
+[data-theme="light"] {
+  /* Brand */
+  --s-color-brand-primary-default: #21AFBF;
+  --s-color-brand-primary-accessible: #1c95a2;
+  --s-color-brand-primary-background: #e7f9fb;
+  --s-color-brand-primary-background-medium: #b6ecf2;
+  --s-color-brand-primary-surface: #21afbf1a;
+  --s-color-brand-primary-on-container: #ffffff;
+
+  --s-color-brand-secondary-default: #405bbf;
+  --s-color-brand-secondary-accessible: #364ea2;
+  --s-color-brand-secondary-background: #eceff9;
+  --s-color-brand-secondary-background-medium: #c6ceec;
+  --s-color-brand-secondary-surface: #405bbf1a;
+  --s-color-brand-secondary-on-container: #ffffff;
+
+  /* Neutral — Background */
+  --s-color-neutral-background-default: #ffffff;
+  --s-color-neutral-background-sunken: #f1f2f3;
+  --s-color-neutral-background-elevation01: #ffffff;
+  --s-color-neutral-background-elevation02: #ffffff;
+  --s-color-neutral-background-default-inverse: #23242a;
+
+  /* Neutral — Contents */
+  --s-color-neutral-contents-default: #23242a;
+  --s-color-neutral-contents-sub: #515462;
+  --s-color-neutral-contents-additional: #73788C;
+  --s-color-neutral-contents-placeholder: #8f93a3;
+  --s-color-neutral-contents-disabled: #8f93a3;
+  --s-color-neutral-contents-on-brand: #ffffff;
+
+  /* Neutral — Border / Divider */
+  --s-color-neutral-border-default: #23242a26;
+  --s-color-neutral-border-light: #23242a1a;
+  --s-color-neutral-border-deep: #23242a4d;
+  --s-color-neutral-divider-default: #23242a1a;
+  --s-color-neutral-divider-deep: #23242a26;
+
+  /* Neutral — Surface (overlays) */
+  --s-color-neutral-surface-extra-light: #23242a05;
+  --s-color-neutral-surface-lightness: #23242a0d;
+  --s-color-neutral-surface-light: #23242a26;
+  --s-color-neutral-surface-medium: #23242a66;
+  --s-color-neutral-surface-dark: #23242ab3;
+
+  /* Semantic */
+  --s-color-semantic-positive-default: #33CC95;
+  --s-color-semantic-positive-accessible: #2bad7e;
+  --s-color-semantic-positive-background: #ebfaf4;
+  --s-color-semantic-positive-on-container: #ffffff;
+
+  --s-color-semantic-negative-default: #E54A1A;
+  --s-color-semantic-negative-accessible: #c33f16;
+  --s-color-semantic-negative-background: #fcede8;
+  --s-color-semantic-negative-on-container: #ffffff;
+
+  --s-color-semantic-warning-default: #E5C51A;
+  --s-color-semantic-warning-accessible: #c3a716;
+  --s-color-semantic-warning-background: #fcf9e8;
+  --s-color-semantic-warning-on-container: #ffffff;
+
+  --s-color-semantic-info-default: #3355CC;
+  --s-color-semantic-info-accessible: #2b48ad;
+  --s-color-semantic-info-background: #ebeefa;
+  --s-color-semantic-info-on-container: #ffffff;
+
+  /* Visualization (11 hues) */
+  --s-color-viz-blue: #3355CC;
+  --s-color-viz-green: #33CC95;
+  --s-color-viz-yellow: #E5C51A;
+  --s-color-viz-orange: #f8820d;
+  --s-color-viz-red: #E54A1A;
+  --s-color-viz-purple: #A026D9;
+  --s-color-viz-magenta: #df2070;
+  --s-color-viz-charteuse: #aed629;
+  --s-color-viz-cyan: #0fbbf0;
+  --s-color-viz-neutral: #73788C;
+  --s-color-viz-neutralDeep: #23242a;
+
+  /* Shadow */
+  --s-shadow-card: 0 2px 8px rgba(30, 27, 75, 0.06);
+  --s-shadow-modal: 0 24px 64px rgba(98, 102, 119, 0.15);
+  --s-shadow-popover: 0 8px 24px rgba(30, 27, 75, 0.12);
+}
+
+[data-theme="dark"] {
+  --s-color-brand-primary-default: #21AFBF;
+  --s-color-brand-primary-accessible: #3ccddd;
+  --s-color-brand-primary-background: #29373e;
+  --s-color-brand-primary-background-medium: #115860;
+  --s-color-brand-primary-surface: #21afbf26;
+  --s-color-brand-primary-on-container: #072326;
+
+  --s-color-brand-secondary-default: #3355CC;
+  --s-color-brand-secondary-accessible: #5c76d6;
+  --s-color-brand-secondary-background: #292b40;
+  --s-color-brand-secondary-background-medium: #1a2a66;
+  --s-color-brand-secondary-surface: #3355cc26;
+  --s-color-brand-secondary-on-container: #0f193d;
+
+  --s-color-neutral-background-default: #23242a;
+  --s-color-neutral-background-sunken: #17181c;
+  --s-color-neutral-background-elevation01: #2e3038;
+  --s-color-neutral-background-elevation02: #454854;
+  --s-color-neutral-background-default-inverse: #e3e4e8;
+
+  --s-color-neutral-contents-default: #e3e4e8;
+  --s-color-neutral-contents-sub: #abaeba;
+  --s-color-neutral-contents-additional: #73788C;
+  --s-color-neutral-contents-placeholder: #5c6070;
+  --s-color-neutral-contents-disabled: #5c6070;
+  --s-color-neutral-contents-on-brand: #ffffff;
+
+  --s-color-neutral-border-default: #e3e4e826;
+  --s-color-neutral-border-light: #e3e4e81a;
+  --s-color-neutral-border-deep: #e3e4e84d;
+  --s-color-neutral-divider-default: #e3e4e81a;
+  --s-color-neutral-divider-deep: #e3e4e826;
+
+  --s-color-neutral-surface-extra-light: #e3e4e805;
+  --s-color-neutral-surface-lightness: #e3e4e80d;
+  --s-color-neutral-surface-light: #e3e4e826;
+  --s-color-neutral-surface-medium: #e3e4e866;
+  --s-color-neutral-surface-dark: #e3e4e8b3;
+
+  --s-color-semantic-positive-background: #1c2a25;
+  --s-color-semantic-negative-background: #2e211d;
+  --s-color-semantic-warning-background: #2e2b1d;
+  --s-color-semantic-info-background: #1d2330;
+
+  --s-shadow-card: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --s-shadow-modal: 0 24px 64px rgba(0, 0, 0, 0.6);
+  --s-shadow-popover: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Radius */
+:root {
+  --s-radius-xs: 4px;
+  --s-radius-s: 6px;
+  --s-radius-m: 8px;
+  --s-radius-l: 10px;
+  --s-radius-xl: 12px;
+  --s-radius-full: 999px;
+
+  --s-space-2: 2px;
+  --s-space-4: 4px;
+  --s-space-8: 8px;
+  --s-space-12: 12px;
+  --s-space-16: 16px;
+  --s-space-20: 20px;
+  --s-space-24: 24px;
+  --s-space-32: 32px;
+  --s-space-40: 40px;
+  --s-space-48: 48px;
+  --s-space-64: 64px;
+
+  --s-font-family: "Pretendard Variable", Figtree, "IBM Plex Sans JP", system-ui, -apple-system, sans-serif;
+}
+
+/* Type scale */
+.t-display-xl { font-size: 4rem; line-height: 6rem; font-weight: 700; letter-spacing: -0.04em; }
+.t-display-m  { font-size: 3rem; line-height: 4rem; font-weight: 700; letter-spacing: -0.04em; }
+.t-display-xs { font-size: 2rem; line-height: 2.625rem; font-weight: 700; letter-spacing: -0.03em; }
+.t-title-xl   { font-size: 1.5rem; line-height: 2rem; font-weight: 600; letter-spacing: -0.02em; }
+.t-title-l    { font-size: 1.25rem; line-height: 1.75rem; font-weight: 600; letter-spacing: -0.02em; }
+.t-title-m    { font-size: 1.125rem; line-height: 1.625rem; font-weight: 600; letter-spacing: -0.01em; }
+.t-title-s    { font-size: 1rem; line-height: 1.5rem; font-weight: 600; letter-spacing: -0.01em; }
+.t-title-xs   { font-size: 0.875rem; line-height: 1.25rem; font-weight: 600; letter-spacing: -0.01em; }
+.t-body-l     { font-size: 1rem; line-height: 1.5rem; font-weight: 400; }
+.t-body-m     { font-size: 0.875rem; line-height: 1.25rem; font-weight: 400; }
+.t-body-s     { font-size: 0.75rem; line-height: 1rem; font-weight: 400; }
+.t-body-strong-m { font-size: 0.875rem; line-height: 1.25rem; font-weight: 500; }
+.t-body-strong-l { font-size: 1rem; line-height: 1.5rem; font-weight: 500; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--s-font-family);
+  background: var(--s-color-neutral-background-sunken);
+  color: var(--s-color-neutral-contents-default);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+button { font-family: inherit; }

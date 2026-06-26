@@ -1,0 +1,17 @@
+{
+  "name": "bh-marketing-landing",
+  "version": "1.0.0",
+  "description": "BH마케팅 랜딩페이지 + 챗봇",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "openai": "^4.47.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
