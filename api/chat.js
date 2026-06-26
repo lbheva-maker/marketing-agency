@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const OpenAI = require('openai');
+const ws = require('ws');
 const { createClient } = require('@supabase/supabase-js');
 
 // ── 폴백: uploads/*.md 전체 주입 ───────────────────────────────
@@ -67,7 +68,7 @@ module.exports = async function handler(req, res) {
   const supabaseUrl = process.env.SUPABASE_URL;
   const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
   const supabase = supabaseUrl && supabaseKey
-    ? createClient(supabaseUrl, supabaseKey)
+    ? createClient(supabaseUrl, supabaseKey, { realtime: { transport: ws } })
     : null;
 
   // 지식 베이스 구성 (RAG 우선, 폴백: 전체 파일)

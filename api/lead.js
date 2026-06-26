@@ -1,3 +1,4 @@
+const ws = require('ws');
 const { createClient } = require('@supabase/supabase-js');
 
 module.exports = async function handler(req, res) {
@@ -16,7 +17,7 @@ module.exports = async function handler(req, res) {
     return res.status(500).json({ error: 'Supabase 환경변수가 설정되지 않았습니다.' });
   }
 
-  const supabase = createClient(url, key);
+  const supabase = createClient(url, key, { realtime: { transport: ws } });
   const { error } = await supabase.from('leads').insert({ name, email, phone, message });
 
   if (error) {
