@@ -1,6 +1,7 @@
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
+const ws = require('ws');
 const { createClient } = require('@supabase/supabase-js');
 const OpenAI = require('openai');
 
@@ -9,7 +10,8 @@ const CHUNK_OVERLAP = 50;
 
 const supabase = createClient(
   process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
+  process.env.SUPABASE_SERVICE_ROLE_KEY,
+  { realtime: { transport: ws } }
 );
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
